@@ -1,0 +1,152 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.appLayout {
+  padding: 12px;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.panelBox {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.panelHeader {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.panelTitle {
+  font-weight: 800;
+}
+
+.panelBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.graphArea {
+  flex: 1;
+  min-height: 0;
+}
+
+.graphLoading {
+  padding: 12px;
+  font-size: 13px;
+  color: #444;
+}
+
+.graphFooter {
+  padding: 10px 12px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 12px;
+  color: #555;
+  background: #fff;
+}
+
+.smallButton {
+  padding: 7px 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.smallButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.chatMessages {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.msg {
+  margin-bottom: 12px;
+}
+
+.msgUser {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.msgSystem {
+  background: #f7f7ff;
+  border: 1px solid #e4e4ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.msgRole {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.messageContent {
+  white-space: pre-line;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.chatComposer {
+  padding: 12px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  gap: 8px;
+  background: #fff;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chatSend {
+  padding: 10px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.chatSend:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
